@@ -20,35 +20,6 @@
 // 	fmt.Println("Rata-rata dari ketiga bilangan:", rataRata)
 // }
 
-// package main
-
-// import (
-// 	"fmt"
-// 	"strconv"
-// )
-
-// func cekHadiah(tiket int) string {
-// 	strTiket := strconv.Itoa(tiket)
-// 	genap := true
-// 	ganjil := true
-
-// 	for _, digit := range strTiket {
-// 		d := int(digit - '0')
-// 		if d%2 == 0 {
-// 			ganjil = false
-// 		} else {
-// 			genap = false
-// 		}
-// 	}
-
-// 	if genap {
-// 		return "Hadiah Utama"
-// 	} else if ganjil {
-// 		return "Hadiah Sembako"
-// 	} else {
-// 		return "Hadiah Konsol"
-// 	}
-// }
 
 package main
 
