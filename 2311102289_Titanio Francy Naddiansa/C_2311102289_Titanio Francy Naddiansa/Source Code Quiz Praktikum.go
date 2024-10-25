@@ -21,66 +21,66 @@
 // }
 
 
-package main
+// package main
 
-import (
-	"fmt"
-	"strconv"
-)
+// import (
+// 	"fmt"
+// 	"strconv"
+// )
 
-func cekHadiah(tiket int) string {
-	strTiket := strconv.Itoa(tiket)
-	genap := true
-	ganjil := true
+// func cekHadiah(tiket int) string {
+// 	strTiket := strconv.Itoa(tiket)
+// 	genap := true
+// 	ganjil := true
 
-	for _, digit := range strTiket {
-		d := int(digit - '0')
-		if d%2 == 0 {
-			ganjil = false
-		} else {
-			genap = false
-		}
-	}
+// 	for _, digit := range strTiket {
+// 		d := int(digit - '0')
+// 		if d%2 == 0 {
+// 			ganjil = false
+// 		} else {
+// 			genap = false
+// 		}
+// 	}
 
-	if genap {
-		return "Hadiah Utama"
-	} else if ganjil {
-		return "Hadiah Sembako"
-	} else {
-		return "Hadiah Konsol"
-	}
-}
+// 	if genap {
+// 		return "Hadiah Utama"
+// 	} else if ganjil {
+// 		return "Hadiah Sembako"
+// 	} else {
+// 		return "Hadiah Konsol"
+// 	}
+// }
 
-func main() {
-	var N int
-	var hadiahUtama, hadiahSembako, hadiahKonsol int
+// func main() {
+// 	var N int
+// 	var hadiahUtama, hadiahSembako, hadiahKonsol int
 
-	fmt.Print("Masukkan jumlah peserta acara: ")
-	fmt.Scan(&N)
+// 	fmt.Print("Masukkan jumlah peserta acara: ")
+// 	fmt.Scan(&N)
 
-	for i := 1; i <= N; i++ {
-		var tiket int
-		fmt.Printf("Masukkan nomor tiket peserta %d: ", i)
-		fmt.Scan(&tiket)
+// 	for i := 1; i <= N; i++ {
+// 		var tiket int
+// 		fmt.Printf("Masukkan nomor tiket peserta %d: ", i)
+// 		fmt.Scan(&tiket)
 
-		hadiah := cekHadiah(tiket)
-		fmt.Println(hadiah)
+// 		hadiah := cekHadiah(tiket)
+// 		fmt.Println(hadiah)
 
-		switch hadiah {
-		case "Hadiah Utama":
-			hadiahUtama++
-		case "Hadiah Sembako":
-			hadiahSembako++
-		case "Hadiah Konsol":
-			hadiahKonsol++
-		}
-	}
+// 		switch hadiah {
+// 		case "Hadiah Utama":
+// 			hadiahUtama++
+// 		case "Hadiah Sembako":
+// 			hadiahSembako++
+// 		case "Hadiah Konsol":
+// 			hadiahKonsol++
+// 		}
+// 	}
 
-	fmt.Println("Jumlah:")
-	fmt.Println("Hadiah Utama:", hadiahUtama)
-	fmt.Println("Hadiah Sembako:", hadiahSembako)
-	fmt.Println("Hadiah Konsol:", hadiahKonsol)
-}
+// 	fmt.Println("Jumlah:")
+// 	fmt.Println("Hadiah Utama:", hadiahUtama)
+// 	fmt.Println("Hadiah Sembako:", hadiahSembako)
+// 	fmt.Println("Hadiah Konsol:", hadiahKonsol)
+// }
 
 // package main
 
